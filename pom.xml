@@ -35,14 +35,15 @@
             <artifactId>allure-rest-assured</artifactId>
             <version>2.13.6</version>
         </dependency>
-        <!--        Добавил зависисмость для аллюра, чтобы строился отчет автоматически
-              и не приходилось вручную перекладывать allure-9.0 в папку .allure проекта
-                 Если возникнут конфликты при подключении зависимости, то рекомендуется обновить локальные репозитории,
-              потому что старые зависимости подтягиваются и возникает конфликт-->
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-selenide</artifactId>
             <version>2.14.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.31</version>
         </dependency>
         <dependency>
             <groupId>com.oracle.ojdbc</groupId>
@@ -63,11 +64,6 @@
             <groupId>org.jetbrains</groupId>
             <artifactId>annotations</artifactId>
             <version>16.0.3</version>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-simple</artifactId>
-            <version>1.7.31</version>
         </dependency>
         <dependency>
             <groupId>org.apache.poi</groupId>

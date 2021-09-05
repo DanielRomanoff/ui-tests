@@ -16,7 +16,7 @@ public class GoogleTestSuccess extends BaseTest {
     GooglePage google = new GooglePage(this);
     DuckDuckPage duckduck = new DuckDuckPage(this);
 
-    @Test(description = "Проверка отображения заявок согласно календарю")
+    @Test(description = "Проверка работы поиска Google")
     public void testSearch() {
         openBrowser("https://google.com");
         googleSearch("duckduckgo");

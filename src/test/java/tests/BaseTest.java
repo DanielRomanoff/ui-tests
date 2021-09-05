@@ -16,11 +16,12 @@ public abstract class BaseTest {
 
     @BeforeSuite(alwaysRun = true)
     public void beforeSuite() {
-        Configuration.remote = "http://localhost:4444/wd/hub";
+        //Раскомментируй для запуска тестов в докер контейнере
+        //Configuration.remote = "http://localhost:4444/wd/hub";
+        //Configuration.browser = "firefox";
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         Configuration.screenshots = true;
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        Configuration.browser = "firefox";
         capabilities.setCapability("enableVNC", true);
         Configuration.browserCapabilities = capabilities;
     }
